@@ -26,3 +26,4 @@ Otros Comandos
 -git checkout <nombre de una rama / id de tu commit> |--> Sirve para moverse o desplazarse entre las ramas o id de algún commit, ver otras ramas o commits anteriores
 -git reset <id de tu commit> --hard |--> Sirve para "volver a una version anterior" del proyecto, cuidado con ello porque volveras a esa versión sin retorno a la actual
 -git reset <id de tu commit> --soft |--> Sirve para "volver a una version anterior" del proyecto conservando los archivos que estan en staging, cuidado con ello porque volveras a esa versión sin retorno a la actual
+-git config --list |--> Sirve para ver la configuracion de nuestro repositorio
