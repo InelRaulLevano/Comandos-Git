@@ -1,3 +1,14 @@
-1. git init
-2. git add .
-3. git commit -m "inserta Mensaje aquí"
+Subir una Carpeta Local a un Repositorio Remoto en Git:
+  git init
+  git add . 
+  git commit -m "Inserta un mensaje aquí"
+  git config --goblal user.email []
+  git config --goblal user.name []
+  git branch -M -main
+  git remote add origin htt...
+  git push -u origin main
+
+
+Información Adicional
+-git add . --> Sirve para añadir "todos" los archivos a staging para luego ser enviados al repositorio local / remoto
+-git add ejemplo.txt --> Sirve para añadir un archivo, en este caso "ejemplo.txt" al staging para luego ser enviados al repositorio local / remoto
