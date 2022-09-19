@@ -5,17 +5,24 @@ Subir una Carpeta Local a un Repositorio Remoto en Git:
   git config --goblal user.email "Pones tu Email"
   git config --goblal user.name "Pones tu Nombre"
   git branch -M main
-  git remote add origin https...
+  git remote add origin <url de tu repositorio remoto>
   git push -u origin main
 
 
 Información Adicional
--git init --> Sirve para iniciar git como repositorio local
--git add . --> Sirve para añadir "todos" los archivos a staging para luego ser enviados al repositorio local / remoto
--git add ejemplo.txt --> Sirve para añadir "un archivo", en este caso "ejemplo.txt" al staging para luego ser enviados al repositorio local / remoto
--git commit -m "" --> Sirve para mandar un "mensaje" a la hora de subir nuestros archivos a staging & almacenarlo en el historial
--git config --goblal user.email "" --> Sirve para guardar nuestro "email" en el repositorio local y darle a entender a git quien realiza los cambios
--git config --goblal user.name "" --> Sirve para guardar nuestro "nombre" en el repositorio local y darle a entender a git quien realiza los cambios
--git branch -M main --> Sirve para "cambiar el nombre" de la rama "master" a "main" o principal, puesto que nuestro repositorio remoto se crea por defecto con el nombre "main"
--git remote add origin https... --> sirve para "agregar un repositorio remoto" al repositorio local para luego enviar, traer, etc. archivos
--git push -u origin main --> Sirve para "subir/cargar/enviar los archivos locales" al repositorio remoto
+-git init |--> Sirve para iniciar git como repositorio local
+-git add . |--> Sirve para añadir "todos" los archivos a staging para luego ser enviados al repositorio local / remoto
+-git add ejemplo.txt |--> Sirve para añadir "un archivo", en este caso "ejemplo.txt" al staging para luego ser enviados al repositorio local / remoto
+-git commit -m "" |--> Sirve para mandar un "mensaje" a la hora de subir nuestros archivos a staging & almacenarlo en el historial
+-git config --goblal user.email "" |--> Sirve para guardar nuestro "email" en el repositorio local y darle a entender a git quien realiza los cambios
+-git config --goblal user.name "" |--> Sirve para guardar nuestro "nombre" en el repositorio local y darle a entender a git quien realiza los cambios
+-git branch -M main |--> Sirve para "cambiar el nombre" de la rama "master" a "main" o principal, puesto que nuestro repositorio remoto se crea por defecto con el nombre "main"
+-git remote add origin https... |--> sirve para "agregar un repositorio remoto" al repositorio local para luego enviar, traer, etc. archivos
+-git push -u origin main |--> Sirve para "subir/cargar/enviar los archivos locales" al repositorio remoto
+
+Otros Comandos
+-git status |--> Sirve para ver el estado de nuestro repositorio
+-git log |--> Sirve para "ver el historial" de cambios en el repositorio
+-git checkout <nombre de una rama / id de tu commit> |--> Sirve para moverse o desplazarse entre las ramas o id de algún commit, ver las ramas o commits anteriores
+-git reset <id de tu commit> --hard |--> Sirve para "volver a una version anterior" del proyecto, cuidado con ello porque volveras a esa versión sin retorno a la actual
+-git reset <id de tu commit> --soft |--> Sirve para "volver a una version anterior" del proyecto conservando los archivos que estan en staging, cuidado con ello porque volveras a esa versión sin retorno a la actual
